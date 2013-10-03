@@ -14,7 +14,7 @@ int main () {
 					printf("%llu-%d\n", lucchis2, broqch);
 				}			
 			}
-/*prints wrong past the 92nd lucas number - unsigned long long is too short*/
+/*prints wrong past the 92nd lucas number - unsigned long long is too short for more*/
 		switch (zamestitel) {
 			case 1 :  
 				zamestitel++;
