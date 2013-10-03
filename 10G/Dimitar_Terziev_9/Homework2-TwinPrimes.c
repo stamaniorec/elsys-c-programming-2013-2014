@@ -20,7 +20,7 @@ int main () {
 				}
 			}
 			if (proverka==1) {
-				printf ("(%d,%d)", prosto, prosto+2);
+				printf ("(%d,%d)\n", prosto, prosto+2);
 				broqch_dvoiki++;
 				prosto=prosto+2;
 			}
