@@ -21,7 +21,7 @@ int flag;
 	   }
 
 	}
-	if(flag=0)
+	if(flag==0)
 	{
 		if(number==prev_number+2)
 		{
