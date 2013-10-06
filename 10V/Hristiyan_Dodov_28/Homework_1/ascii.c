@@ -2,17 +2,13 @@
 
 int main(){
 
-	char c;
-	int i=0;
+	int i;
 
-	for(i; i<255; i++){
+	for(i=0; i<=256; i++){
 
-		c=i;
-
-		printf("%d - %c\n", i, c);
+		printf("%d - %c\n", i, i);
 
 	}
 
 	return 0;
-
 }
