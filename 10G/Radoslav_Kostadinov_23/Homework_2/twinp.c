@@ -16,7 +16,7 @@ int f;
   			break;
     			}
   		}
-  if(f=0){
+  if(f==0){
 
     if(number==pred_number+2){
 
@@ -29,5 +29,4 @@ int f;
       number++;
   }
 return 0;
-}  // Tazi mi beshe trudna i q kopirah da q razgledam i da si q promenq malko no neshto se oburka i ne iska da gi izvede sega.
-
+} 
