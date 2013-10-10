@@ -1,7 +1,8 @@
 #include<stdio.h>
+#include<string.h>
 int main () {
 	int chislo1, chislo2, izhod;
-	char znak [3];
+	char znak [4];
 	scanf("%d", &chislo1);
 	scanf("%s", znak);
 	scanf("%d", &chislo2);
