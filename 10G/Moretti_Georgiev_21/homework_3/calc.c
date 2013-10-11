@@ -18,12 +18,22 @@ int main(){
 		printf("answer: %d",a);
 	}
 	else if(strcmp(c,"div")==0){
+		if(num2==0){
+			printf("error:");
+		}
+		else{
 		a=num1/num2;
 		printf("answer: %d",a);
 	}
+	}
 	else if(strcmp(c,"mod")==0){
+		if(num2==0){
+			printf("error");
+		}
+		else{
 		a=num1%num2;
 		printf("answer: %d",a);
+	}
 	}
 	else{
 		printf("error");
