@@ -24,12 +24,20 @@ int main(){
 			printf("\t %d MUL %d = %d \n", num1, num2, h);
 			break;
 		case 4:
-			h = num1/num2;
-			printf("\t %d DIV %d = %d \n", num1, num2, h);
+			if (num2 == 0){
+				printf("\t %d DIV %d = 0 \n", num1, num2);
+			} else {
+				h = num1/num2;
+				printf("\t %d DIV %d = %d \n", num1, num2, h);
+			}
 			break;
 		case 5:
-			h = num1%num2;
-			printf("\t %d MOD %d = %d \n", num1, num2, h);
+			if (num2 == 0){
+				printf("\t %d MOD %d = 0 \n", num1, num2);
+			} else {
+				h = num1%num2;
+				printf("\t %d MOD %d = %d \n", num1, num2, h);
+			}
 			break;
 		default:
 			printf ("\t ERROR: Wrong Operation/Operator! \n");
