@@ -25,7 +25,7 @@ int main(){
 			break;
 		case 4:
 			if (num2 == 0){
-				printf("\t %d DIV %d = 0 \n", num1, num2);
+				printf("\t ERROR: CANNOT DIVIDE BY 0! \n");
 			} else {
 				h = num1/num2;
 				printf("\t %d DIV %d = %d \n", num1, num2, h);
