@@ -12,21 +12,21 @@ c=0;
 
 if (!strcmp(str, "add" )) 
 {
-c=a+b; f=1; printf ("When you add %d to %d the result is %d\n", b , a , c); 
+c=a+b; f=1; printf ("%d\n", c); 
 }
 
 if (!strcmp(str, "sub" )) {
-c=a-b; f=1; printf ("When you subtract %d from %d the result is %d\n", b , a , c);
+c=a-b; f=1; printf ("%d\n",c);
 }
 
 if (!strcmp(str, "mul" )) {
-c=a*b; f=1; printf ("When you multiply %d to %d the result is %d\n", b , a , c);
+c=a*b; f=1; printf ("%d\n",c);
 }
 
 if (!strcmp(str, "div" )) {
 if (b!=0) 
  {
-  c=a/b; f=1; printf ("When you divide %d to %d the result is %d\n", a , b , c);
+  c=a/b; f=1; printf ("%d\n",c);
 }
  }
 
