@@ -13,34 +13,34 @@ int main(){
 	switch(c){
 		case 1:
 			h = num1+num2;
-			printf("\t %d ADD %d = %d \n", num1, num2, h);
+			printf("%d", h);
 			break;
 		case 2:
 			h = num1-num2;
-			printf("\t %d SUB %d = %d \n", num1, num2, h);
+			printf("%d", h);
 			break;
 		case 3:
 			h = num1*num2;
-			printf("\t %d MUL %d = %d \n", num1, num2, h);
+			printf("%d", h);
 			break;
 		case 4:
 			if (num2 == 0){
-				printf("\t ERROR: CANNOT DIVIDE BY 0! \n");
+				printf("error");
 			} else {
 				h = num1/num2;
-				printf("\t %d DIV %d = %d \n", num1, num2, h);
+				printf("%d", h);
 			}
 			break;
 		case 5:
 			if (num2 == 0){
-				printf("\t %d MOD %d = 0 \n", num1, num2);
+				printf("error");
 			} else {
 				h = num1%num2;
-				printf("\t %d MOD %d = %d \n", num1, num2, h);
+				printf("%d", h);
 			}
 			break;
 		default:
-			printf ("\t ERROR: Wrong Operation/Operator! \n");
+			printf ("error");
 			break;
 	}
 	return 0;
