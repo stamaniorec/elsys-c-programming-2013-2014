@@ -4,65 +4,59 @@
 
 int main()
 {
- int first,second, answer;	
- char operation[9];
 
- printf("Operations:\n");
- printf("add\n");
- printf("sub\n");
- printf("mul\n");
- printf("div\n");
- printf("FORMAT: first_num, operation, second_num\n");
+	 int first,second, answer;        
+	 char operation[9];
 
 
 
-  scanf("%d %s %d",&first,operation,&second); 
+
+  scanf("%d %s %d",&first,operation,&second);
   
   if (strcmp(operation,"add")==0)
-	{
-		printf("Operation add\n");
-		answer=first+second;
-		printf("ANSWER = %d\n",answer);
-	} 
+        {
+                answer=first+second;
+                printf("%d",answer);
+        }
    
- else	
+ else        
   if (strcmp(operation,"sub")==0)
-	{
-		printf("Operation sub\n");
-		answer=first-second;
-		printf("ANSWER = %d\n",answer);
-	}
- else   	
-  if (strcmp(operation,"mul")==0) 
-	{	
-		printf("Operation mul\n");
-		answer=first*second;
-		printf("ANSWER = %d\n",answer);
-	}
- else	
+        {
+              
+                answer=first-second;
+                printf("%d",answer);
+        }
+ else         
+  if (strcmp(operation,"mul")==0)
+        {        
+                
+                answer=first*second;
+                printf("%d",answer);
+        }
+ else        
   if (strcmp(operation,"div")==0)
         {
           if (second!=0)
-	{
-		 printf("Operation div\n");
-		 answer=first/second; 
-	 	 printf("ANSWER = %d\n",answer);
-	} 	
-	   else printf("Operation div error - Ne se deli na 0 !\n");
+        {
+                 
+                 answer=first/second;
+                  printf("%d",answer);
+        }         
+         else printf("error");
         }
  else
   if (strcmp(operation,"mod")==0)
         {
           if (second!=0)
-	{
-		printf("Operation mod\n");
-		answer=first%second;
-		printf("ANSWER = %d\n", answer);
-	}
-	  else printf("Operation mod error\n"); 
-	}  
- else printf("error !\n");
-	
+        {
+                
+                answer=first%second;
+                printf("%d", answer);
+        }
+         else printf("error");
+        }
+ else printf("error");
+        
 
  return 0;
-} 
+}
