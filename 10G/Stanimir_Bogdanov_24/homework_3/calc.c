@@ -28,11 +28,25 @@ int main()
     }
     else if ( strcmp(operation, "div") == 0 )
     {
-        printf("%d", division(a,b));
+        if ( b != 0 )
+        {
+            printf("%d", division(a,b));
+        }
+        else
+        {
+            printf("error");
+        }
     }
     else if ( strcmp(operation, "mod") == 0 )
     {
-        printf("%d", mod(a,b));
+        if ( b != 0 )
+        {
+            printf("%d", mod(a,b));
+        }
+        else
+        {
+            printf("error");
+        }
     }
     else
     {
