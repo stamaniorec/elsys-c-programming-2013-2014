@@ -54,7 +54,7 @@ int sub(int f, int s)
 
 int mul(int f, int s)
 {
-    return(f, s);
+    return(f * s);
 }
 
 int div(int f, int s)
