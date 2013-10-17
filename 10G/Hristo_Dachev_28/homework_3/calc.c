@@ -34,7 +34,7 @@ int main(){
 						}
 						else printf ("error\n");
 					}
-				else printf("ne se deli na 0\n");
+				else printf("error\n");
 			}
 		}
 	}	
