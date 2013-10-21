@@ -1,26 +1,38 @@
 # include <stdio.h> 
-int main() { 
-char operator; 
-float num1,num2; 
-printf("VYVEDI KOMANDA"); 
-scanf("%c", &operator); 
-printf("VYVEDI PYRVOTO I VTORO CHISLO "); 
-scanf("%f%f",&num1,&num2); 
-switch(operator) { 
-case 
-	'+': printf("num1+num2=%.2f",num1+num2); 
-break; 
-case 
-	'-': printf("num1-num2=%.2f",num1-num2); 
-break; 
-case 
-	'*': printf("num1*num2=%.2f",num1*num2); 
-break; 
-case 
-	'/': printf("num2/num1 = %.2f",num1/num2); 
-break; 
-default: 
-printf("Error!!! GRESHEN SIMVOL"); 
-break; } 
+# include <string.h>
+int main(int argc, char* argv[]) { 
+int num1, num2, result,f =0; 
+char opr[3];
+scanf("%d %s %d", &num1, opr, &num2); 
+if (!strcmp(opr, "add" )){  
+	result = num1 + num2;
+	f=1;
+	}
+if (!strcmp(opr, "sub" )){  
+	result= num1 - num2; 
+	f=1;
+}
+if (!strcmp(opr, "mul" )) { 
+	result= num1 * num2;
+	f=1; 
+}
+if (!strcmp(opr, "div" )){  
+	if (num2!=0){
+		result= num1 / num2;
+		f=1;	
+	} 
+} 
+if (!strcmp(opr, "mod" )){  
+	if (num2!=0){
+		result= num1 % num2;
+		f=1;
+	}
+} 
+if (f==1) {
+	printf("%d\n", result);
+} 
+else { 
+printf("error");
+}
 return 0; 
 }
