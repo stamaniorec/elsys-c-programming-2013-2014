@@ -38,13 +38,12 @@ int main(){
 			error=1;
 		}	
 	}
-
 	
 	if (error==0){
-		printf("%d\n", i3);
+		printf("%d", i3);
 	}else {
 		error=1;
-		printf("error\n");
+		printf("error");
 	}
 		
 
