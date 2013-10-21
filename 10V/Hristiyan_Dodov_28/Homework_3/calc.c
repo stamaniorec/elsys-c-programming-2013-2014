@@ -38,7 +38,6 @@ int main(){
 			error=1;
 		}	
 	}
-
 	
 	if (error==0){
 		printf("%d", i3);
