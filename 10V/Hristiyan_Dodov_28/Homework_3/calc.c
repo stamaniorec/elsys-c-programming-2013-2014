@@ -9,30 +9,45 @@ int main(){
 	
 	int error = 0;
 	
-	printf("\n// operatori : add,sub,mul,div,mod //\nIzberi si dve chisla i mejdu tqh sloji operator : ");
 	scanf("%d %s %d", &i1, op, &i2);
 	
 	if (strcmp(op, "add") == 0){
 		i3=i1+i2;
 	}else 
+	
 	if (strcmp(op, "sub") == 0){
 		i3=i1-i2;
 	}else 
+	
 	if (strcmp(op, "mul") == 0){
 		i3=i1*i2;
-	}else 
+	}else
+	 
 	if (strcmp(op, "div") == 0){
-		i3=i1/i2;
+		if (i2!=0) {
+			i3=i1/i2;
+		}else {
+			error=1;
+		}
 	}else 
+	
 	if (strcmp(op, "mod") == 0){
-		i3=i1%i2;
-	}else{
-		error=1;
-		printf("error\n");}
+		if (i2!=0) {
+			i3=i1%i2;
+		}else {
+			error=1;
+		}	
+	}
+
 	
 	if (error==0){
-		printf("Rezultat : %d \n", i3);
+		printf("%d\n", i3);
+	}else {
+		error=1;
+		printf("error\n");
 	}
-	
+		
+
 	return 0;
+
 }
