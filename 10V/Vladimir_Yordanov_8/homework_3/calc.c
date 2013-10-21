@@ -18,21 +18,21 @@ int main () {
 		if (num2!=0) {
 			answer=num1/num2;
 		}else{
-			printf("error\n"); error=1;
+			printf("error"); error=1;
 		} 
 	}
 	else if (strcmp(operator,"mod") == 0) {
 		if (num2!=0) {
 			answer=num1%num2;
 		}else{
-			printf("error\n"); error=1; 
+			printf("error"); error=1; 
 		} 
 	}else{
-		printf("error\n"); error=1;
+		printf("error"); error=1;
 	}
 	
 	if (error!=1) {
-		printf("%d\n", answer);
+		printf("%d", answer);
 	}
 	
 	return 0;
