@@ -2,47 +2,61 @@
 #include<string.h> 
 int main() 
 {
-	int a,b,i; 
+	int a,b,i,booll; 
 	char c[120]; 
-	//printf("Vuvedi 4islo\n");
+	booll=0;
+	
 	scanf("%d",&a);
-	//Vuvedi("Vuvedi operaciq\n");
+	
  	scanf("%s",c); 
-	//printf("Vuvedi 4islo\n");
+	
 	scanf("%d",&b);
- 	if(strcmp(c,"add")==0)
+
+	if ((strcmp(c,"mod")==0) && (b==0))
+	{	
+		booll=1;	
+	}
+
+	 if ((strcmp(c,"div")==0) && (b==0))
+	{	
+		booll=1;	
+	}
+
+
+								
+	if(strcmp(c,"add")==0)
  	{ 
 		i=a+b;
-	 	printf("%d,add\n",i); 
+	 	printf("%d\n",i); 
 	}
 	else
  	{
  		if(strcmp(c,"sub")==0)
  		{ 
 			i=a-b;
- 			printf("%d,sub\n",i); 
+ 			printf("%d\n",i); 
 		} 	
 		else 	
 		{ 
 			if (strcmp(c,"mul")==0)
 			{	
 				i=a*b;
-			 	printf("%d,mul\n",i);
+			 	printf("%d\n",i);
  			}
 
 			else
  			{
-				if (strcmp(c,"div")==0)  
+				if ((strcmp(c,"div")==0) && (booll!=1))  
 				{	
 					i=a/b;
-					printf("%d,div\n",i);
+					printf("%d\n",i);
  				} 
 				else 
 				{
-					if(strcmp(c,"mod")==0) 
+					if((strcmp(c,"mod")==0) && (booll!=1)) 
 					{
 						 i=a%b;
-						 printf("%d,mod\n",i);
+						 printf("%d\n",i);
 					}
 					else 
 					{
