@@ -2,47 +2,57 @@
 #include <string.h>
 
 int main() {
-	char operaciq[4];
+	char operation[4];
+	int nul;
 	int a;
 	int b;
-	int Rezultat;
+	int rezult;
  	    
-	    printf("a=");
-	    scanf("%d" ,&a);
-	    printf("Izberete operaciq:add,sub(izvajda b ot a),mul,div ili mod?\n");
-	    scanf("%s" ,operaciq);
-	    printf("b=");
-	    scanf("%d" ,&b);
-		
-	if (strcmp(operaciq,"add")==0)
+	    
+	    scanf("%d%s%d" ,&a,operation,&b);
+	  nul=0; 
+	  if(b==0)
+	  {
+	  nul=1;
+	  }
+	if (strcmp(operation,"add")==0)
 	{
-		Rezultat=a+b;
-		printf("a+b=");		
-		printf("%d\n" ,Rezultat);
+		rezult=a+b;	
+		printf("%d\n" ,rezult);
 	}
-	else if (strcmp(operaciq,"sub")==0)
+	else if (strcmp(operation,"sub")==0)
 	{
-		Rezultat=b-a;
-		printf("b-a=");		
-		printf("%d\n" ,Rezultat);
+		rezult=a-b;		
+		printf("%d\n" ,rezult);
 	}
-	else if (strcmp(operaciq,"mul")==0)
+	else if (strcmp(operation,"mul")==0)
 	{
-		Rezultat=a*b;
-		printf("a*b=");		
-		printf("%d\n" ,Rezultat);
+		rezult=a*b;		
+		printf("%d\n" ,rezult);
 	}
-	 else if (strcmp(operaciq,"div")==0)
+	 else if (strcmp(operation,"div")==0)
 	{
-		Rezultat=a/b;
-		printf("a/b=");		
-		printf("%d\n" ,Rezultat);
+	if (nul==1)
+	{	
+	printf("error\n");
 	}
-	else if (strcmp(operaciq,"mod")==0)
+	else
+	{	
+		rezult=a/b;		
+		printf("%d\n" ,rezult);
+	}
+	}
+	else if (strcmp(operation,"mod")==0)
 	{
-		Rezultat=a%b;
-		printf("a mod b=");		
-		printf("%d\n" ,Rezultat);
+	if (nul==1)
+	{	
+	printf("error\n");
+	}
+	else
+	{
+		rezult=a%b;		
+		printf("%d\n" ,rezult);
+	}	
 	}
 	else
 	{
