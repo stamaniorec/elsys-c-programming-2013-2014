@@ -8,12 +8,7 @@ int main()
   int correct_function=0;
   char function[5];
 
-printf("Input the first number:");
-scanf("%d",&number1);
-printf("Select a funtcion:");
-scanf("%s",function);
-printf("Input the second number:");
-scanf("%d",&number2);
+scanf("%d %s %d",&number1,function,&number2);
 
 	if (!strcmp(function, "add")) 
 	{
@@ -36,8 +31,11 @@ scanf("%d",&number2);
  	
 	if (!strcmp(function, "div")) 
 	{
+		if (number2!=0)
+		{
         	numb_sum = number1 / number2;
 		correct_function = 1;
+		}
 	}
 
 	
