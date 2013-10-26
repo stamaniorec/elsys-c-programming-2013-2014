@@ -26,7 +26,7 @@ int main()
 
 
 	
-	printf("%d\n",numbers_sum);
+	printf("%d",numbers_sum);
 
 
 	return 0;
