@@ -23,7 +23,7 @@ int main () {
 		}
 		counter_1++;
 	}
-	printf("%f\n",sum);
+	printf("%f",sum);
 	return 0;
 }
 
